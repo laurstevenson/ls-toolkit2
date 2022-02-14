@@ -1,0 +1,200 @@
+body {
+    background-color: #cad2c5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    padding: 2.5em 0 2.5em;
+}
+
+h1, h2 {
+    font-family: 'Vollkorn', sans-serif;
+    font-weight: 600;
+}
+
+h1 {
+    padding-bottom: 1rem;
+    color: #2f3e46;
+}
+
+h2 {
+    padding: 0.8em 0 0.8em;
+}
+
+.objectives h2 {
+    color: #cad2c5;
+}
+
+.objectives {
+    background-color: #52796f;
+    color: #fff;
+    padding: 5em;
+}
+
+.objectives-item {
+    border-right: 1px dashed #cad2c5;
+    margin-top: 1.5rem;
+    padding: 5px 10px 5px 20px;
+}
+
+.objectives-item:nth-of-type(3) {
+    border-right: none;
+}
+
+.objectives-item:last-of-type {
+    border-right: none;
+}
+
+.ls-goals {
+    padding-top: 20px;
+}
+
+.intro3 {
+    padding: 2.5em 0 2.5em;
+}
+
+.intro3 h2 {
+    color: #2f3e46;
+}
+
+img.starter-img {
+    margin-top: 100px;
+}
+
+ol.starter-list {
+    list-style: none;
+    counter-reset: item;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+ol.starter-list li {
+    counter-increment: item;
+    display: flex;
+    width: 100%;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #2f3e46;
+}
+
+li.starter-list-item::before {
+    content: "0" counter(item);
+    font-weight: bold;
+    font-size: 3rem;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+    font-family: 'Vollkorn', sans-serif;
+    line-height: 1;
+    color: #52796f;
+}
+
+button.main-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #354f52;
+    box-shadow: 5px 5px #fff;
+    margin: 30px;
+    border-radius: 3px;
+}
+
+button.main-btn a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Vollkorn', sans-serif;
+}
+
+div.demos {
+    background-color:#52796f;
+    padding: 1em 0.5em 2.5em;
+}
+
+div.ventus-video {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+div.ventus-video {
+    margin: 0.5em;
+    padding: 1.5em;
+}
+
+p.ventus-content {
+    padding: 15px 50px 0;
+}
+
+.demos h2 {
+    color: #fff;
+}
+
+.demos-intro {
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 10px;
+    line-height: 1.75;
+}
+
+img.intro-img {
+    width: 75%;
+    margin-left: 1.5em;
+}
+
+/* .ls-prep:first-child {
+    padding-left: 100px;
+}
+
+.ls-prep:last-of-type {
+    padding-right: 100px;
+} */
+
+h4.heading-prep {
+    border-left: 1px solid #2f3e46;
+    padding-left: 5px;
+    color:#2f3e46;
+    font-family: 'Vollkorn', sans-serif;
+}
+
+ul.role {
+    line-height: 1.5em;
+    margin: 5px 0 15px;
+    padding: 0;
+}
+
+li.role-item {
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 20px;
+}
+
+li.role-item::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 5px;
+    width: 3px;
+    height: 6px;
+    border: solid #2f3e46;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+@media (max-width: 768px) {
+    img.starter-img {
+        display: none;
+    }
+    .objectives-item {
+        border: none;
+        padding: 5px;
+        margin-top: 0.5em;
+    }
+    /* div.ventus-video:nth-of-type(2) {
+        margin-top: 1em;
+        padding-top: 1.5em;
+    }
+    div.ventus-video:nth-of-type(3) {
+        margin-top: 1em;
+        padding-top: 1.5em;
+    } */
+}
